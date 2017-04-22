@@ -15,9 +15,8 @@
 #define CFG_POL_UP_BUT_UNPRESS_TIMER_IN_MS 80
 #define CFG_POL_UP_BUT_UNPRESS_TIMER ((CFG_POL_UP_BUT_UNPRESS_TIMER_IN_MS*1000L)/(CYCLE_TIME_IN_MICROS))
 
-#define PORT_FM1upReqDI 0
-
-#define PORT_POLupReqDI 0
+#define PORT_FM1upReqDI 11
+#define PORT_POLupReqDI 11
 
 #ifdef CFG_FM1_USE_SERVO
 #include <Servo.h>
@@ -36,6 +35,9 @@
 #define CFG_POL_SERVO_PARKED_ANGLE 30
 #define CFG_POL_SERVO_ACTIVE_ANGLE 150
 #endif
+
+#define CFG_LED_1_PIN 11
+#define CFG_LED_1_PIN 12
 
 #endif
 
